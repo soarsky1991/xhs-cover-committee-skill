@@ -14,6 +14,7 @@ The work started with a simple problem: AI-generated covers looked polished, but
 - `assets/debug-panels/` - map/debug boards through v75.
 - `assets/final-covers/` - five v73 single-cover exports preserved as a consolidation checkpoint.
 - `assets/current-covers/` - v75 corrected current covers plus preserved v74 critique material.
+- `assets/layout-schemes/` - six visual samples for the maintained layout families.
 - `assets/edge-evidence/` - edge-detection evidence from v68, including the combined board.
 - `src/` - open-source renderer/check/export code copied from the original HyperFrames experiment.
 - `docs/project-plan.md` - the bilingual scope/progress/control table for this living project.

@@ -6,6 +6,8 @@ This document records the six cover-title families that should be maintained bey
 
 ## 1. Headline Crown / 头顶压顶主标题
 
+![headline crown](../assets/layout-schemes/01-headline-crown-v75.jpg)
+
 Use when the person is centered or center-right and there is real space above the hairline.
 
 适用于人物居中或偏右，头顶有真实可用空间的封面。
@@ -17,6 +19,8 @@ Use when the person is centered or center-right and there is real space above th
 
 ## 2. Straight Axis No-Frame / 无底框直排轴线
 
+![straight axis no frame](../assets/layout-schemes/02-straight-axis-no-frame-v59.jpg)
+
 Use when the image has a natural wall/desk/paper pocket and the title should feel clean instead of decorative.
 
 适用于自然场景里有墙面、桌面、纸面留白，但不想加便签、底框或小长条的版本。
@@ -26,6 +30,8 @@ Use when the image has a natural wall/desk/paper pocket and the title should fee
 - Why it matters: v59 is one of the important user-recognized directions.
 
 ## 3. Object Carrier / 物件承载标题
+
+![object carrier](../assets/layout-schemes/03-object-carrier-v17.jpg)
 
 Use when the base image includes a sticky note, paper surface, monitor, whiteboard, role card, or light board.
 
@@ -37,6 +43,8 @@ Use when the base image includes a sticky note, paper surface, monitor, whiteboa
 
 ## 4. Side Pocket / 主体两侧口袋
 
+![side pocket](../assets/layout-schemes/04-side-pocket-v73.jpg)
+
 Use when the person, tool, fox, crystal, and negative space form left/right title pockets.
 
 适用于人物、工具、狐狸、水晶和留白形成左右两侧文字口袋的封面。
@@ -46,6 +54,8 @@ Use when the person, tool, fox, crystal, and negative space form left/right titl
 - Risk: too many side labels make the cover loose.
 
 ## 5. Lower Information Band / 下方信息带
+
+![lower information band](../assets/layout-schemes/05-lower-information-band-v75.jpg)
 
 Use when desk, chest-below area, laptop, paper, or crystal leaves room for a second title layer.
 
@@ -57,12 +67,14 @@ Use when desk, chest-below area, laptop, paper, or crystal leaves room for a sec
 
 ## 6. Article Card / 黑底文章卡与观点型封面
 
+![article card prototype](../assets/layout-schemes/06-article-card-prototype.svg)
+
 Use for reflective essays, dense opinion posts, or literary/AI thinking topics where a photo-first cover is not necessary.
 
 适用于深度观点、文学/AI 思考、长文型内容；这类封面不一定要人物照片做主体。
 
-- Status: documented from reference learning, not fully implemented in this package yet.
-- Next step: create a deterministic article-card renderer with strong Chinese hierarchy and minimal imagery.
+- Status: prototype visual sample exists; deterministic renderer is not fully implemented in this package yet.
+- Next step: create a deterministic article-card renderer with strong Chinese hierarchy and minimal imagery, then export ordinary/debug boards like the other families.
 - Risk: it can look too plain if the title rhythm is weak.
 
 ## Maintenance Rule / 维护规则

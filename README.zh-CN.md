@@ -14,6 +14,7 @@ English: see [README.md](README.md).
 - `assets/debug-panels/`：v3-v75 区域/禁区/密度调试图。
 - `assets/final-covers/`：v73 单张封面导出，作为阶段性收敛保留。
 - `assets/current-covers/`：v75 当前修正版，同时保留 v74 批判材料。
+- `assets/layout-schemes/`：六种布局方案的视觉样张。
 - `assets/edge-evidence/`：边缘证据图，用来证明标题是否真的贴近轮廓。
 - `src/`：原始渲染 HTML、布局检查脚本、导出脚本。
 - `docs/project-plan.md`：中英文总控表，用来显示范围、进度和剩余工作。

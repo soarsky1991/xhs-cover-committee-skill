@@ -96,6 +96,7 @@ await Promise.all([
   assertMinFiles("assets/debug-panels", 73),
   assertMinFiles("assets/final-covers", 5),
   assertMinFiles("assets/current-covers", 5),
+  assertMinFiles("assets/layout-schemes", 6),
   assertMinFiles("assets/edge-evidence", 6),
 ]);
 
@@ -129,6 +130,12 @@ await Promise.all([
   "assets/debug-panels/ai-cover-title-layout-sculpt-v75-map-debug.jpg",
   "assets/current-covers/ai-coding-xhs-cover-sculpt-v75-1080x1440.jpg",
   "assets/current-covers/ai-agent-xhs-cover-sculpt-v75-1080x1440.jpg",
+  "assets/layout-schemes/01-headline-crown-v75.jpg",
+  "assets/layout-schemes/02-straight-axis-no-frame-v59.jpg",
+  "assets/layout-schemes/03-object-carrier-v17.jpg",
+  "assets/layout-schemes/04-side-pocket-v73.jpg",
+  "assets/layout-schemes/05-lower-information-band-v75.jpg",
+  "assets/layout-schemes/06-article-card-prototype.svg",
   "assets/edge-evidence/edge-board.jpg"
 ].forEach(assertExists);
 

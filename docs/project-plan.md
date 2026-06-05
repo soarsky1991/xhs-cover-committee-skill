@@ -28,7 +28,7 @@ This repository is a living cover-system project, not a one-shot final-cover dum
 | --- | --- | --- | --- |
 | v75 visual correction | Done | `assets/iteration-panels/ai-cover-title-layout-comparison-sculpt-v75.jpg`, `assets/debug-panels/ai-cover-title-layout-sculpt-v75-map-debug.jpg` | Future taste review by user |
 | v59/v73/v74 preservation | Done | Gallery and iteration story keep all three as checkpoints | Keep adding notes when the user names another good earlier version |
-| Six layout families | Partial | `docs/layout-schemes.md` defines six families | Article-card family is documented but not fully implemented as a renderer |
+| Six layout families | Mostly done | `docs/layout-schemes.md` defines six families and `assets/layout-schemes/` stores visual samples | Article-card family has a prototype sample but not a full deterministic renderer |
 | Bilingual iteration story | Partial | `docs/iteration-story.md`, `docs/iteration-story.zh-CN.md` | Keep adding future versions; tighten story after more user review |
 | Open-source code | Done locally | `src/hyperframes/`, `src/scripts/` | Run package check after docs finish |
 | GitHub publish | Pending | Local repo connected to GitHub | Commit and push after validation |
@@ -37,7 +37,7 @@ This repository is a living cover-system project, not a one-shot final-cover dum
 | --- | --- | --- | --- |
 | v75 视觉修正 | 已完成 | `assets/iteration-panels/ai-cover-title-layout-comparison-sculpt-v75.jpg`、`assets/debug-panels/ai-cover-title-layout-sculpt-v75-map-debug.jpg` | 等用户继续做审美判断 |
 | v59/v73/v74 保留 | 已完成 | 图库和迭代故事都保留为关键节点 | 后续如果用户指出早期好版本，继续补注释 |
-| 六种布局方案 | 部分完成 | `docs/layout-schemes.md` 已定义六类 | 黑底文章卡已文档化，但还没有完整 renderer |
+| 六种布局方案 | 基本完成 | `docs/layout-schemes.md` 已定义六类，`assets/layout-schemes/` 已有样张 | 黑底文章卡已有原型样张，但还没有完整 renderer |
 | 双语迭代故事 | 部分完成 | `docs/iteration-story.md`、`docs/iteration-story.zh-CN.md` | 后续版本继续维护；用户复审后再收紧叙事 |
 | 代码开源 | 本地完成 | `src/hyperframes/`、`src/scripts/` | 文档完成后跑包检查 |
 | GitHub 发布 | 待完成 | 本地仓库已连接 GitHub | 验证后提交并推送 |
@@ -69,4 +69,3 @@ Each future version should follow this order:
 For planning purposes, a text/document update is usually small, a deterministic layout update is medium, and a new visual family with exported images is large. The largest uncertainty is visual taste review: if a new exported board is rejected, the next version should be treated as a new design iteration rather than a quick documentation edit.
 
 为了便于安排时间，纯文档更新通常是小任务，确定性布局修改是中等任务，新增一种视觉家族并导出图片是大任务。最大不确定性来自审美复审：如果新导出的总览图被否定，就应该把下一版当成新的设计迭代，而不是简单文档修补。
-
