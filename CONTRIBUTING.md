@@ -1,37 +1,64 @@
 # Contributing
 
-This repository welcomes improvements to the cover method, not just prettier example images.
+This package is meant to grow through evidence. A new cover experiment should add images, a version note, and the rule it taught.
 
-Good contributions include:
+## Add a New Version
 
-- better subject-region detection,
-- stronger debug-map conventions,
-- new title-shape families,
-- before/after iteration notes,
-- validation scripts,
-- examples where the current method fails.
+1. Add the ordinary comparison board to `assets/iteration-panels/`.
+2. Add the debug/map board to `assets/debug-panels/`.
+3. If edge evidence was used, add it to `assets/edge-evidence/`.
+4. Update `docs/gallery.md` if the image is a useful milestone.
+5. Update `docs/iteration-story.md` and `docs/iteration-story.zh-CN.md` if the version changes the method.
+6. Declare the layout family from `docs/layout-schemes.md`.
+7. Run:
 
-## Pull Request Format
+```bash
+node scripts/check-package.mjs
+```
 
-Include:
+## Version Note Format
 
-- the problem you saw,
-- the image or panel that proves it,
-- the rule you changed,
-- before/after assets when available,
-- how you verified the change.
+Use this short format when adding a milestone:
 
-## What Not To Add
+```md
+## vNN: Short Name
 
-- copied third-party social screenshots,
-- unverified benchmark images,
-- generic prompt packs without region logic,
-- decorative arcs or stickers that do not attach to image meaning.
+Problem:
 
-## Suggested First Issues
+- What looked wrong?
 
-- Add a lightweight segmentation-assisted region map.
-- Build a thumbnail-size readability checker.
-- Add contour-path examples for more subject poses.
-- Replace the current v74 mechanical contour paths with image-aware paths.
+Change:
 
+- What changed in image, title, zones, or checking?
+
+Evidence:
+
+- Ordinary board: `assets/iteration-panels/...`
+- Debug board: `assets/debug-panels/...`
+
+Rule promoted:
+
+- What should future versions reuse?
+```
+
+## Asset Rules
+
+- Do not commit third-party Xiaohongshu screenshots.
+- Do not commit Disney/Zootopia or other copyrighted character materials.
+- Do not imply endorsement by referenced creators or platforms.
+- Use original/generated experiment images, debug boards, and written observations.
+- If a reference screenshot is needed for private learning, keep it outside the open repo.
+
+## Good Pull Requests
+
+A good PR usually includes:
+
+- one clear experiment goal;
+- ordinary and debug evidence;
+- a before/after explanation;
+- one reusable rule;
+- no unrelated visual churn.
+
+## Bilingual Rule
+
+User-facing narrative docs should keep Chinese and English entry points in sync. At minimum, update the matching `*.zh-CN.md` file when the English story/method/gallery changes.

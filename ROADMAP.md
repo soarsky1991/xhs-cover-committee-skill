@@ -1,22 +1,46 @@
 # Roadmap
 
-## Near Term
+## 1. Repo Launch
 
-- Add a reproducible renderer for the public examples.
-- Add machine-readable manifests for each iteration board.
-- Add a small set of "bad cover" tests that must fail.
-- Improve the skill with a stricter region-first checklist.
+- Pick GitHub owner, repository name, and visibility.
+- Confirm license and asset policy.
+- Add a concise project thumbnail or social preview image.
+- Publish the package without third-party screenshots.
 
-## Medium Term
+## 2. Deterministic Renderer Extraction
 
-- Prototype subject segmentation for face, companion, hand, tool, and object zones.
-- Add thumbnail-readability scoring.
-- Generate title-region suggestions from real contours instead of hand-tuned paths.
-- Add community-submitted cover critiques and fixes.
+- Refactor the copied `src/hyperframes/ai-theme-cover-preview.html` into a smaller reusable demo.
+- Keep title variables editable.
+- Keep ordinary/debug export paired.
+- Keep `npm run check` or equivalent validation mandatory after HTML edits.
 
-## Long Term
+## 3. Image-2 / Img2img Base-Image Refinement
 
-- Turn the committee into a repeatable design review loop for social covers.
-- Support multiple creator identities without collapsing into one template.
-- Build a public benchmark of cover layout failures and recoveries.
+- Use image-to-image refinement for base-image corrections when references already exist.
+- Generate stronger title carriers before doing title layout.
+- Keep final Chinese words in deterministic layout, not model-rendered text.
 
+## 4. Automatic Contour Assistance
+
+- Add edge evidence generation as a first-class script.
+- Explore automatic subject/object contour suggestions.
+- Keep human review as the final layout decision.
+
+## 5. More Reference Grammars
+
+- Add more creator-account title grammars as summarized observations.
+- Keep each account as a pattern library, not an asset dump.
+- Compare which title structures transfer across themes.
+
+## 6. Skill Distribution
+
+- Package `skills/xhs-cover-committee` for local install.
+- Add examples for new agents: learn, generate, check, write version note.
+- Maintain a changelog when rules are promoted from experiments into the skill.
+
+## 7. Six Layout Families
+
+- Maintain the six families in `docs/layout-schemes.md`.
+- Add missing article-card examples.
+- Keep v59 as a no-frame straight-axis reference.
+- Keep v74 as the cautionary contour-path lesson.

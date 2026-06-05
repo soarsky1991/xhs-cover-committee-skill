@@ -1,76 +1,134 @@
 # Method
 
-The skill turns cover design into a review loop. It is not a one-click image prompt.
+The cover committee method has one guiding idea: title design is a spatial system. It must read as text, protect the subject, and attach to the image structure.
 
-## 1. Read The Image Before Writing Titles
+## 1. Learn the Grammar, Do Not Copy the Source
 
-Identify at least these regions:
+The Atutun-style reference was used as a learning source for title grammar:
 
-- human face and hairline,
-- companion character face,
-- hands and gestures,
-- main tool or prop,
-- crystal/object anchor,
-- screen, paper, board, wall, or desk writing areas,
-- unusable clutter.
+- thick, high-contrast Chinese title forms;
+- large words with black outline and shadow;
+- different title structures per topic;
+- supporting labels used as rhythm, not as the main layout;
+- creator/subject cutouts that interact with text.
 
-If the region map is vague, stop and make it concrete before placing text.
+The open package does not include third-party screenshots. It records observations and uses original/generated experiment images.
 
-## 2. Design Title Quantity From Area
+## 2. Name Real Regions
 
-Estimate how much text the safe area can hold. If the title is too short, the cover will feel empty even with a good font.
+Do not start with `left-safe` or `top-safe`. Start with visible objects:
 
-Use:
+- `human-face-hard-zone`
+- `fox-face-hard-zone`
+- `crystal-hard-zone`
+- `hand-gesture-hard-zone`
+- `sticky-note-title-carrier`
+- `paper-surface-title-carrier`
+- `monitor-title-carrier`
+- `whiteboard-title-carrier`
+- `role-card-number-hammer`
 
-- one oversized main hook,
-- one or two medium secondary phrases,
-- a lower information band if the desk/chest area has room,
-- only a few small proof marks.
+The name should force the layout to answer: what object is carrying this title?
 
-Do not fill space with bottom boxes or chip rows.
+## 3. Separate Hard Zones, Soft Zones, and Carriers
 
-## 3. Choose A Shape Per Topic
+Hard zones:
 
-The title shape should change with the topic:
+- human face, eyes, mouth;
+- fox face and ears when they define the companion;
+- crystal surface or brand-like object;
+- hands when they explain the action;
+- key tools such as microphone, pen, laptop, or screen focus.
 
-- coding: title near computer, hand, and action path,
-- paper: title on paper/tablet/reading surface,
-- video: title near screen, microphone, publishing flow,
-- workbench: title around board, desk, and crystal,
-- agent: concept title plus boundary/check/evidence zones.
+Soft zones:
 
-Stable visual language is good. Identical layout is not.
+- shoulders, sleeves, desk edges, background gradients;
+- object edges that can support a small overlap if foreground depth is added.
 
-## 4. Use Contours Carefully
+Carriers:
 
-A curved title is only useful when it follows something real: head, shoulder, fox ears, paper edge, microphone, crystal, screen, or a strong blank-space boundary.
+- paper, sticky notes, screens, whiteboards, speech bubbles, role cards, light panels.
 
-Avoid decorative arcs that have no subject meaning.
+Only carriers should hold main title mass. Soft zones may support tiny notes. Hard zones stay protected.
 
-## 5. Verify In Two Modes
+## 4. Build Title Mass Before Labels
 
-Normal cover:
+The failed versions often used too many small labels. The stronger versions made the main title carry the cover.
 
-- first read: title hook,
-- second read: subject and companion,
-- third read: theme-specific detail.
+Rule of thumb:
 
-Debug map:
+- one main title group owns 40-60% of the attention;
+- line breaks and word scale fill space before extra stickers are added;
+- 0-1 small badge is usually enough;
+- if the cover looks empty, enlarge/restructure the main title before adding labels.
 
-- no face/companion/tool/crystal collision,
-- title stays inside named regions,
-- title groups do not overlap,
-- lower density is not empty,
-- contour claims have edge evidence.
+## 5. Match Shape to Theme
 
-## 6. Treat Rejection As Data
+Each theme needs a different title structure:
 
-When a cover feels wrong, write the rejection as a rule. Examples:
+- coding: tutorial blocks, sticky-note title fill, finger/laptop route;
+- paper: paper surface, reading/understanding phrases, skewed title angle;
+- video workflow: monitor/timeline surface, process words, screen-edge alignment;
+- workbench: board/light-panel structure, crystal bypass, collection/organization wording;
+- agent: whiteboard concept title plus right-side number hammer.
 
-- "No bottom frame" becomes a repository rule.
-- "Each line needs one direction" becomes an alignment check.
-- "Main title is not on the head top" becomes a head-top title gate.
-- "The contour is fake" becomes an edge-evidence requirement.
+Stable visual language is allowed. Reusing the same layout skeleton is not.
 
-The project improves when the critique becomes testable.
+## 5.5 Keep Straight Text Straight Unless the Image Earns a Curve
 
+The v74 failure taught an important correction: contour-aware does not mean every text group becomes an arc.
+
+- Main titles may curve when they follow a head top, subject gesture, or real object contour.
+- Side and lower text should usually remain straight or lightly angled.
+- A curved side/lower line must point to a visible reason: paper edge, screen edge, microphone, crystal, fox ear, desk edge, or another named contour.
+- If the reader cannot explain the curve from the image, make it straight.
+
+This is why v59 remains an important checkpoint.
+
+v75 turns the correction into a current positive rule: the main headline may follow the human crown or task contour, while side-pocket and lower-band text should remain straight unless the image contains a named object contour that justifies bending.
+
+## 6. Use Edge Evidence as a Review Layer
+
+Edge evidence helps reveal real contours:
+
+![edge board](../assets/edge-evidence/edge-board.jpg)
+
+Use it to answer:
+
+- where does the paper actually tilt?
+- where does the crystal edge interrupt text?
+- where does the fox head need foreground priority?
+- where does the whiteboard or monitor begin/end?
+
+The edge board is not an automatic layout result. It is evidence for the next deterministic HTML decision.
+
+## 7. Keep Chinese Title Placement Deterministic
+
+Generated image models are useful for base images and image-to-image refinement, but final Chinese title placement should be deterministic:
+
+- write final text in HTML/CSS or another controllable layout layer;
+- avoid asking the image model to render final Chinese title words;
+- export ordinary and debug boards together;
+- run collision checks before reviewing aesthetics.
+
+This is why the original experiment used the HyperFrames renderer and a layout-check script.
+
+## 8. Review in Three Passes
+
+Full-size pass:
+
+- Is the title complete and readable?
+- Are subject, fox, and crystal intact?
+- Does the title follow the carrier object?
+
+Thumbnail pass:
+
+- Does the main title survive small-screen scrolling?
+- Are there too many tiny labels?
+- Is the first hook visible without reading every word?
+
+Debug pass:
+
+- Do title boxes avoid hard zones?
+- Do debug zones match real visual objects?
+- Does edge evidence support the chosen carrier?
