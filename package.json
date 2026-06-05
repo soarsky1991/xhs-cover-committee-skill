@@ -1,0 +1,12 @@
+{
+  "name": "xhs-cover-committee-skill",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A failure-driven Xiaohongshu cover review skill with 74+ iteration panels and region-aware title layout rules.",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-package.mjs"
+  },
+  "license": "MIT"
+}
+
