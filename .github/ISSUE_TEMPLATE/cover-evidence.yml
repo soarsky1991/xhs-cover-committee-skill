@@ -1,0 +1,29 @@
+name: Cover evidence or rule gap
+description: Report a missing process artifact, unsupported claim, or reusable layout rule.
+title: "[cover] "
+labels: ["triage", "evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not upload third-party screenshots, personal data, client material, credentials, or private URLs. Do not report publication or metrics as if they were process evidence."
+  - type: input
+    id: file
+    attributes:
+      label: File or version
+      placeholder: assets/iteration-panels/... or docs/cases/...
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding and evidence boundary
+      description: State what the cited material supports and what it does not support.
+    validations:
+      required: true
+  - type: textarea
+    id: repair
+    attributes:
+      label: Reproducible repair
+      description: Give a safe, local check or documentation change.
+    validations:
+      required: true

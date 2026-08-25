@@ -1,8 +1,8 @@
 # 小红书封面委员会 Skill
 
-English: see [README.md](README.md).
+英文完整说明：见 [README.en.md](README.en.md)；中文主入口：见 [README.md](README.md)。
 
-![v75 封面总览](assets/iteration-panels/ai-cover-title-layout-comparison-sculpt-v75.jpg)
+![三张极简迭代草图展示初版、中间失败版和最终修正版 / Three minimal iteration sketches show an initial version, a failed middle version, and a corrected final version.](docs/assets/social-preview.png)
 
 这个仓库记录的是一次真实、反复被否定、又继续推进的小红书封面实验：75+ 版确定性 HTML 排版、147 张普通/调试过程图、边缘证据图、开源代码，以及一个可复用的 Codex Skill。
 

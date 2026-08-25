@@ -62,3 +62,9 @@ A good PR usually includes:
 ## Bilingual Rule
 
 User-facing narrative docs should keep Chinese and English entry points in sync. At minimum, update the matching `*.zh-CN.md` file when the English story/method/gallery changes.
+
+## Public identity and evidence boundary
+
+Use the public maintainer identity 马智辰 (Zhichen Ma / 智辰老师), `soarhigh1991@gmail.com`, and X `@AI2studio`. Do not add employers, roles, clients, locations, historical aliases, private contact data, or other social profiles.
+
+Version counts, process boards, debug maps, package checks, and review notes are process evidence only. They must never be described as publication, reach, engagement, follower growth, recommendation, revenue, or platform approval. A new case must include: specific problem, input, method, reproducible local output, evidence, unsupported conclusions, and a three-minute exercise.
